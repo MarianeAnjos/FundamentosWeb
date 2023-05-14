@@ -4,6 +4,10 @@
     text-align: center;
 }
 
+.justify{
+    text-align: justify;
+    font-size: 20px;
+}
 .container{
     display:flex ;
     flex-flow: row;
@@ -45,4 +49,11 @@
     padding: 10px;
 }
 
+.mb-50{
+    margin-bottom: 50px;
+}
+
 /* Estilos da página contato.htlm */
+.ml-50{
+    margin-left: 50px;
+}
