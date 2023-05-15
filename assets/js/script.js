@@ -86,3 +86,7 @@ function enviar() {
     }
 }
 
+    /* Codio para a leitura do robo da generation brasil, por favor ignore-->
+    <!--<script type="text/javascript">
+        alert("Hello world!")
+    </script> */
