@@ -19,7 +19,7 @@ email.style.width = '100%'
 // validação do nome
 function validaNome() {
     let txtNome = document.querySelector('#txtNome')
-    if(nome.value.length < 2){
+    if (nome.value.length < 2) {
         txtNome.innerHTML = 'Nome Inválido'
         txtNome.style.color = 'red'
     } else {
@@ -30,15 +30,15 @@ function validaNome() {
 }
 
 // validação de email
-function validaEmail(){
+function validaEmail() {
     let txtEmail = document.querySelector('#txtEmail')
 
-    if(email.value.indexOf('@') == -1 ||email.value.indexOf('.') == -1 ){
+    if (email.value.indexOf('@') == -1 || email.value.indexOf('.') == -1) {
         txtEmail.innerHTML = 'E-mail inválido'
         txtEmail.style.color = 'red'
     } else {
         txtEmail.innerHTML = 'E-mail válido'
-        txtEmail.style.color= 'green'
+        txtEmail.style.color = 'green'
         emailOk = true
     }
 }
@@ -49,40 +49,40 @@ function validaAssunto() {
 
     if (assunto.value.length >= 500) {
         txtAssunto.innerHTML = 'Texto é muito grande, digite no máximo 500 caracteres'
-        txtAssunto.style.color ='red'
+        txtAssunto.style.color = 'red'
         txtAssunto.style.display = 'block'
-}else{
-    txtAssunto.style.display = 'none'
-    assuntoOk = true
-}
+    } else {
+        txtAssunto.style.display = 'none'
+        assuntoOk = true
+    }
 }
 
-assunto.style.width= '100%'
+assunto.style.width = '100%'
 
 //validando e ajustando o email: 
-    function validaEmail () {
+function validaEmail() {
     let txtEmail = document.querySelector('#txtEmail')
-    if (email.value.indexOf('@') == -1 || email.value.indexOf('.') == -1){ 
+    if (email.value.indexOf('@') == -1 || email.value.indexOf('.') == -1) {
         txtEmail.innerHTML = 'E-mail inválido'
         email.style.color = 'red'
-        email.style.border='3px solid red'
+        email.style.border = '3px solid red'
     } else {
         txtEmail.innerHTML = 'E-mail válido'
         email.style.color = 'green'
-        email.style.border='3px solid green'
+        email.style.border = '3px solid green'
         emailOk = true
     }
-    }
-    
+}
+
 email.style.width = '100%'
 
 
 //enviando alert ao clicar no botão enviar
 function enviar() {
-if(nomeOk == true && emailOk == true && assuntoOk == true) {
-    alert ('Mensagem recebida com sucesso!')
-} else {
-    alert('Preencha o formulário corretamente antes de enviar')
-}
+    if (nomeOk == true && emailOk == true && assuntoOk == true) {
+        alert('Mensagem recebida com sucesso!')
+    } else {
+        alert('Preencha o formulário corretamente antes de enviar')
+    }
 }
 
