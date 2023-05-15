@@ -8,10 +8,6 @@
     <title>Contato</title>
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <script src="assets/js/script.js">
-
-    </script>
-    
 </head>
 
 <body>
@@ -31,13 +27,14 @@
             <label for="email">E-mail:</label><br>
             <input type="email" id="email" onkeyup="validaEmail()">
             <div id='txtEmail'></div>
-  
+
             <br>
             <div class="campos-form">
                 <label for="assunto">Assunto:</label>
-                <textarea name="assunto" id="assunto" rows="5" onkeyup="validaAssunto()" placeholder="Digite sua mensagem aqui"></textarea>
+                <textarea name="assunto" id="assunto" rows="5" onkeyup="validaAssunto()"
+                    placeholder="Digite sua mensagem aqui"></textarea>
                 <div id="txtAssunto"></div>
-                </div>
+            </div>
             <br>
             <button onclick="enviar()">Enviar</button>
         </form>
@@ -70,6 +67,14 @@
         </p>
     </footer>
 
+    <!--Incorporando javascript dentro do html-->
+    <!--<script type="text/javascript">
+        alert("Hello world!")
+    </script>-->
+
+    <script src="assets/js/script.js">
+
+    </script>
 
 </body>
 
