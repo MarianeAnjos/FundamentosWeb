@@ -1,60 +1,80 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    
 </head>
-<body style="background-color: azure">
-    <ul>
+
+<body>
+    <ul id="menu">
         <li>
-            <a class="navbar"  href="index.html">Home</a>
-        </li>
-        <li>
-            <a class="navbar" href="contato.html">Contato</a>
+            <a href="index.html">Home</a>
         </li>
     </ul>
-    <h1 id="tituloContato">Entre em contato comigo</h1>
+    <h1 class="introducao mb-50"> Converse comigo!</h1>
+
     <div class="container">
-    <form id="formulario" action="">
-        <div class="campos-form">
-        <label for="nome">Nome:</label>
-        <input id="nome" onkeyup="validaNome()" type="text" placeholder="Insira seu nome aqui"> 
-        <div id="txtNome"></div>
+        <form>
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" onkeyup='validaNome()'>
+            <div id='txtNome'></div>
+            <br>
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" onkeyup="validaEmail()">
+            <div id='txtEmail'></div>
+  
+            <br>
+            <div class="campos-form">
+                <label for="assunto">Assunto:</label>
+                <textarea name="assunto" id="assunto" rows="5" onkeyup="validaAssunto()" placeholder="Digite sua mensagem aqui"></textarea>
+                <div id="txtAssunto"></div>
+                </div>
+            <br>
+            <button onclick="enviar()">Enviar</button>
+        </form>
+        <div class="ml-50">
+            <p>Jundiaí-São Paulo</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117358.89756550858!2d-46.9067009!3d-23.18969855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf24293cc00531%3A0xf686a1c1163c6bbb!2zSnVuZGlhw60gLSBBZ2xvbWVyYcOnw6NvIFVyYmFuYSBkZSBKdW5kaWHDrSwgSnVuZGlhw60gLSBTUA!5e0!3m2!1spt-BR!2sbr!4v1683569934027!5m2!1spt-BR!2sbr"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
         </div>
 
-        <div class="campos-form">
-        <label for="email">E-Mail:</label>
-        <input type="email" id="email" class="email2" onkeyup="validaEmail()"placeholder="Exemplo: email@provedor.com">
-        <div id="txtEmail"></div>
-        </div>
-
-        <div class="campos-form">
-        <label for="assunto">Assunto:</label>
-        <textarea name="assunto" id="assunto" rows="5" onkeyup="validaAssunto()" placeholder="Digite sua mensagem aqui"></textarea>
-        <div id="txtAssunto"></div>
-        </div>
-
-        <button onclick="enviar()">
-            ENVIAR
-        </button>
-    </form>
     </div>
     <hr>
     <footer>
-        <span id="rodape">
-            Todos os direitos reservados: Juliana Lopes &copy 2023
-        </span>
+
+        <div class="container ">
+
+            <a href="https://www.linkedin.com/in/mariane-anjos-896479173/" target="_blank">
+                <img class="tm-social" src="assets/img/linkedin.png" alt="logo do linkedIn">
+            </a>
+            <a href="https://github.com/MarianeAnjos" target="_blank">
+                <img class="tm-social" src="assets/img/github.png" alt="logo do github">
+            </a>
+
+        </div>
+
+        <p class="center">
+            Todos os direitos reservados para Mariane Anjos &copy;
+        </p>
     </footer>
 
-    <!--Incorporando javascript dentro do html-->
+ <!--Incorporando javascript dentro do html-->
     <!--<script type="text/javascript">
         alert("Hello world!")
     </script>-->
 
-    <!--Usando javascript de um arquivo externo-->
-    <script src="./assets/script/script.js"></script>
+        <script src="assets/js/script.js">
+
+    </script>
+
 </body>
+
 </html>
